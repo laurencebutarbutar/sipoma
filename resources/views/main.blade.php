@@ -19,12 +19,14 @@
 
 
     <link rel="stylesheet" href="{{asset('style/assets/css/style.css')}}">
-
+{{--    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.47/css/bootstrap-datetimepicker.min.css" rel="stylesheet" />--}}
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800' rel='stylesheet' type='text/css'>
 
 </head>
 
 <body>
+    <form action="{{ route('main.store') }}" method="get" enctype="multipart/form-data">
+        @csrf
 
 
     <!-- Left Panel -->
@@ -159,7 +161,7 @@
                             Exit
                             <img src="{{asset('style/images/log-out.svg')}}">
                         </a>
-                        <!-- 
+                        <!--
                         <div class="user-menu dropdown-menu">
                             <a class="nav-link" href="#"><i class="fa fa-cog"></i> Settings</a>
 
@@ -218,8 +220,8 @@
             <div class="col-sm-7">
                 <div class="page-header dropdown float-right">
                     <div class="form-group">
-                        <div class="input-group input-medium date-picker input-daterange" data-date="20180408" data-date-format="yyyymmdd">
-                            <input type="date" class="form-control" id="periode" name="periode" value="20220601" onchange="getTable();">
+                        <div class="input-group input-medium date-picker input-daterange">
+                            <input type="date" class="form-control" id="datePicker" name="datePickerRequest" value="{{ $request -> datePickerRequest }}" onchange="changeTitleDate()">
                         </div>
                     </div>
                 </div>
@@ -231,7 +233,7 @@
 
         <div class="dayname">
             <h3>
-                <center>LAPORAN HARIAN PENCAPAIAN TIKET (SELASA/ 31 MEI 2022)</center>
+                <center>LAPORAN HARIAN PENCAPAIAN TIKET <span id="titleDate"></span></center>
             </h3>
         </div>
         <div class="content mt-3">
@@ -240,27 +242,27 @@
                     <table id="bootstrap-data-table-export" class="table table-bordered table-striped" border="1" cellspacing="0" cellpadding="10">
                         <thead>
                             <tr style="top: 0px" class="bg-primary">
-                                <th rowspan="2"><center>NO</center>
+                                <th rowspan="2" style="vertical-align : middle;text-align:center;"><center>NO</center>
                                 </th>
-                                <th rowspan="2">
+                                <th rowspan="2" style="vertical-align : middle;text-align:center;">
                                     <center>TANGGAL</center>
                                 </th>
-                                <th rowspan="2">
+                                <th rowspan="2" style="vertical-align : middle;text-align:center;">
                                     <center>PERNER</center>
                                 </th>
-                                <th rowspan="2">
+                                <th rowspan="2" style="vertical-align : middle;text-align:center;">
                                     <center>L/P</center>
                                 </th>
-                                <th rowspan="2">
+                                <th rowspan="2" style="vertical-align : middle;text-align:center;">
                                     <center>NAMA</center>
                                 </th>
-                                <th rowspan="2">
+                                <th rowspan="2" style="vertical-align : middle;text-align:center;">
                                     <center>JOB</center>
                                 </th>
-                                <th rowspan="2">
+                                <th rowspan="2" style="vertical-align : middle;text-align:center;">
                                     <center>DINAS</center>
                                 </th>
-                                <th rowspan="2">
+                                <th rowspan="2" style="vertical-align : middle;text-align:center;">
                                     <center>STATUS</center>
                                 </th>
                                 <th colspan="4" class="bg-info">
@@ -269,10 +271,10 @@
                                 <th colspan="3" class="bg-success">
                                     <center> CLOSE </center>
                                 </th>
-                                <th rowspan="2">
+                                <th rowspan="2" style="vertical-align : middle;text-align:center;">
                                     <center>CASE > 30 MENIT</center>
                                 </th>
-                                <th rowspan="2">
+                                <th rowspan="2" style="vertical-align : middle;text-align:center;">
                                     <center>CASE BY HD/TEKNISI</center>
                                 </th>
                                 <th colspan="3" class="bg-warning">
@@ -281,40 +283,45 @@
                                 <th colspan="3" class="bg-secondary">
                                     <center>TOTAL</center>
                                 </th>
-                                <th rowspan="2">
+                                <th rowspan="2" style="vertical-align : middle;text-align:center;">
                                     <center>PERFORMANCE</center>
                                 </th>
 
                             </tr>
                             <tr style="top: 0px">
-                                <td class="bg-info"> INBOX NOSSA</td>
-                                <td class="bg-info"> CARING /TIAL</td>
-                                <td class="bg-info"> DRAFT TICKET</td>
-                                <td class="bg-info"> PLASA</td>
-                                <td class="bg-success"> LOGIC</td>
-                                <td class="bg-success"> CARING</td>
-                                <td class="bg-success"> GAMAS</td>
+                                <td class="bg-info" style="vertical-align : middle;text-align:center;"> INBOX NOSSA</td>
+                                <td class="bg-info" style="vertical-align : middle;text-align:center;"> CARING /TIAL</td>
+                                <td class="bg-info" style="vertical-align : middle;text-align:center;"> DRAFT TICKET</td>
+                                <td class="bg-info" style="vertical-align : middle;text-align:center;"> PLASA</td>
+                                <td class="bg-success" style="vertical-align : middle;text-align:center;"> LOGIC</td>
+                                <td class="bg-success" style="vertical-align : middle;text-align:center;"> CARING</td>
+                                <td class="bg-success" style="vertical-align : middle;text-align:center;"> GAMAS</td>
                                 <!-- <th> </th>
                                 <th> </th> -->
-                                <td class="bg-warning"> INTERNET</td>
-                                <td class="bg-warning"> IPTV</td>
-                                <td class="bg-warning"> PASSWORD</td>
-                                <td class="bg-secondary"> TICKET</td>
-                                <td class="bg-secondary"> CLOSE</td>
-                                <td class="bg-secondary"> UNBIND</td>
+                                <td class="bg-warning" style="vertical-align : middle;text-align:center;"> INTERNET</td>
+                                <td class="bg-warning" style="vertical-align : middle;text-align:center;"> IPTV</td>
+                                <td class="bg-warning" style="vertical-align : middle;text-align:center;"> PASSWORD</td>
+                                <td class="bg-secondary" style="vertical-align : middle;text-align:center;"> TICKET</td>
+                                <td class="bg-secondary" style="vertical-align : middle;text-align:center;"> CLOSE</td>
+                                <td class="bg-secondary" style="vertical-align : middle;text-align:center;"> UNBIND</td>
                             </tr>
                         </thead>
                         <tbody>
+                        @foreach($crew as $index => $c)
                             <tr>
-                                <td>1</td>
-                                <td>17/05/2022</td>
-                                <td>97144</td>
-                                <td>L</td>
-                                <td>ENDRAT FUJIYANTO</td>
-                                <td>CONSUMER</td>
-                                <td>P8</td>
-                                <td>WFO</td>
-                                <td>1</td>
+                                <td>{{ $index + 1 }}</td>
+                                <td>{{ date('d/m/Y', strtotime($c->tanggal)) }}</td>
+                                <td>{{ $c -> perner }}</td>
+                                <td>{{ $c -> jenis_kelamin }}</td>
+                                <td>{{ $c -> nama }}</td>
+                                <td>{{ $c -> jobs }}</td>
+                                <td>{{ $c -> dinas }}</td>
+                                @if($c -> status == '0')
+                                    <td>WFO</td>
+                                @else
+                                    <td>{{ $c -> status }}</td>
+                                @endif
+                                <td>{{ $c -> ticket_inbox_nossa }}</td>
                                 <td>3</td>
                                 <td>53</td>
                                 <td>0</td>
@@ -332,82 +339,7 @@
                                 <td>223</td>
 
                             </tr>
-                            <tr>
-                                <td>2</td>
-                                <td>17/05/2022</td>
-                                <td>97144</td>
-                                <td>L</td>
-                                <td>ENDRAT FUJIYANTO</td>
-                                <td>CONSUMER</td>
-                                <td>P8</td>
-                                <td>WFO</td>
-                                <td>1</td>
-                                <td>3</td>
-                                <td>53</td>
-                                <td>0</td>
-                                <td>0</td>
-                                <td>0</td>
-                                <td>0</td>
-                                <td>3</td>
-                                <td>0</td>
-                                <td>0</td>
-                                <td>0</td>
-                                <td>0</td>
-                                <td>55</td>
-                                <td>40</td>
-                                <td>0</td>
-                                <td>223</td>
-
-                            </tr>
-                            <tr>
-                                <td>2</td>
-                                <td>17/05/2022</td>
-                                <td>97144</td>
-                                <td>L</td>
-                                <td>ENDRAT FUJIYANTO</td>
-                                <td>CONSUMER</td>
-                                <td>P8</td>
-                                <td>WFO</td>
-                                <td>1</td>
-                                <td>3</td>
-                                <td>53</td>
-                                <td>0</td>
-                                <td>0</td>
-                                <td>0</td>
-                                <td>0</td>
-                                <td>3</td>
-                                <td>0</td>
-                                <td>0</td>
-                                <td>0</td>
-                                <td>0</td>
-                                <td>55</td>
-                                <td>40</td>
-                                <td>0</td>
-                                <td>223</td>
-
-                            </tr>
-                            <tr>
-                                <td colspan="8">
-                                    <center>Total</center>
-                                </td>
-                                <td>1</td>
-                                <td>3</td>
-                                <td>53</td>
-                                <td>0</td>
-                                <td>0</td>
-                                <td>0</td>
-                                <td>0</td>
-                                <td>3</td>
-                                <td>0</td>
-                                <td>0</td>
-                                <td>0</td>
-                                <td>0</td>
-                                <td>55</td>
-                                <td>40</td>
-                                <td>0</td>
-                                <td>223</td>
-
-                            </tr>
+                        @endforeach
                         </tbody>
 
 
@@ -595,7 +527,8 @@
     <script src="{{asset('style/vendors/popper.js/dist/umd/popper.min.js')}}"></script>
     <script src="{{asset('style/vendors/bootstrap/dist/js/bootstrap.min.js')}}"></script>
     <script src="{{asset('style/assets/js/main.js')}}"></script>
-
+{{--    <script type="text/javascript" src="/bower_components/moment/min/moment.min.js"></script>--}}
+{{--    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.47/js/bootstrap-datetimepicker.min.js"></script>--}}
 
     <!-- <script src="{{asset('style/vendors/chart.js/dist/Chart.bundle.min.js')}}"></script>
     <script src="{{asset('style/assets/js/dashboard.js')}}"></script>
@@ -621,7 +554,33 @@
             });
         })(jQuery);
     </script> -->
-
+    </form>
 </body>
+<script>
+    let today = new Date();
+    let dd = String(today.getDate()).padStart(2, '0');
+    let mm = String(today.getMonth() + 1).padStart(2, '0'); //January is 0!
+    let yyyy = today.getFullYear();
+    today = yyyy + '-' + mm + '-' + dd;
+    document.getElementById('datePicker').setAttribute('max', today);
+    changeTitleDate();
 
+    let select = document.getElementById('datePicker')
+    select.onchange = function(){
+        this.form.submit();
+    };
+
+    function changeTitleDate(){
+        let datePicker = document.getElementById('datePicker').value;
+        let date = new Date(datePicker);
+        let dayName = date.toLocaleString("in-ID", {weekday:'long'})
+        let dd = String(date.getDate()).padStart(2, '0');
+        let monthName = date.toLocaleString("in-ID", {month:'long'})
+        let yyyy = date.getFullYear();
+        let titleDate = dayName.toLocaleUpperCase() + ' / ' + dd + ' ' + monthName.toLocaleUpperCase() + ' ' + yyyy;
+        document.getElementById('titleDate').innerHTML = '(' + titleDate + ')';
+
+    }
+
+</script>
 </html>

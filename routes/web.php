@@ -29,6 +29,7 @@ Route::get('/main', function () {
 });
 
 Route::post('/', 'App\Http\Controllers\MainController@exit');
+Route::resource('main', MainController::class);
 
 // Route::get('/login', function () {
 //     return view('login');
@@ -44,4 +45,4 @@ Route::post('/', 'App\Http\Controllers\MainController@exit');
 
 // Route::get('/main', [MainController::class, 'main'])->name('main')->middleware('auth');
 // // Route::get('/login', [LoginController::class, 'login'])->name('login')->middleware('auth');
-    
+
