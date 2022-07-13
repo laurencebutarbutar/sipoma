@@ -6,10 +6,10 @@
     <title>Sipoma</title>
     <!-- <link rel="shortcut icon" href="image/logo6.png" /> -->
     <!-- <meta name="description" content="Sipoma"> -->
-    <!-- <meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="apple-touch-icon" href="{{asset('style/apple-icon.png')}}">
     <link rel="shortcut icon" href="{{asset('style/favicon.ico')}}">  -->
-    <!-- {{asset('style/')}} -->
+<!-- {{asset('style/')}} -->
     <link rel="stylesheet" href="{{asset('style/vendors/bootstrap/dist/css/bootstrap.min.css')}}">
     <link rel="stylesheet" href="{{asset('style/vendors/font-awesome/css/font-awesome.min.css')}}">
     <link rel="stylesheet" href="{{asset('style/vendors/themify-icons/css/themify-icons.css')}}">
@@ -19,17 +19,17 @@
 
 
     <link rel="stylesheet" href="{{asset('style/assets/css/style.css')}}">
-{{--    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.47/css/bootstrap-datetimepicker.min.css" rel="stylesheet" />--}}
+    {{-- <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.47/css/bootstrap-datetimepicker.min.css" rel="stylesheet" />--}}
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800' rel='stylesheet' type='text/css'>
 
 </head>
 
 <body>
-    <form action="{{ route('main.store') }}" method="get" enctype="multipart/form-data">
-        @csrf
+<form action="{{ route('main.store') }}" method="get" enctype="multipart/form-data">
+@csrf
 
 
-    <!-- Left Panel -->
+<!-- Left Panel -->
 
     <aside id="left-panel" class="left-panel">
         <nav class="navbar navbar-expand-sm navbar-default">
@@ -76,18 +76,18 @@
 
 
                         <!-- <div>
-                                    <b-form-datepicker
-                                    id="datepicker-buttons"
-                                    today-button
-                                    reset-button
-                                    close-button
-                                    locale="en">
-                            </b-form-datepicker>
-                            </div> -->
+                                <b-form-datepicker
+                                id="datepicker-buttons"
+                                today-button
+                                reset-button
+                                close-button
+                                locale="en">
+                        </b-form-datepicker>
+                        </div> -->
 
 
 
-                        <!-- <div class="dropdown for-notification">
+                    <!-- <div class="dropdown for-notification">
                             <button class="btn btn-secondary dropdown-toggle" type="button" id="notification" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 <i class="fa fa-bell"></i>
                                 <span class="count bg-danger">5</span>
@@ -157,39 +157,39 @@
 
                 <div class="col-sm-5">
                     <div class="user-area dropdown float-right">
-                        <a href="/" class = "btn btn-outline-secondary rounded" role="button" aria-pressed="true"" aria-expanded="false" >
-                            Exit
-                            <img src="{{asset('style/images/log-out.svg')}}">
+                        <a href="/" class="btn btn-outline-secondary rounded" role="button" aria-pressed="true"" aria-expanded=" false">
+                        Exit
+                        <img src="{{asset('style/images/log-out.svg')}}">
                         </a>
                         <!--
-                        <div class="user-menu dropdown-menu">
-                            <a class="nav-link" href="#"><i class="fa fa-cog"></i> Settings</a>
+                    <div class="user-menu dropdown-menu">
+                        <a class="nav-link" href="#"><i class="fa fa-cog"></i> Settings</a>
 
-                            <a class="nav-link" href="#"><i class="fa fa-power-off"></i> Logout</a>
-                        </div> -->
+                        <a class="nav-link" href="#"><i class="fa fa-power-off"></i> Logout</a>
+                    </div> -->
                     </div>
 
 
 
                     <!-- <div class="language-select dropdown" id="language-select">
-                        <a class="dropdown-toggle" href="#" data-toggle="dropdown"  id="language" aria-haspopup="true" aria-expanded="true">
-                            <i class="flag-icon flag-icon-us"></i>
-                        </a>
-                        <div class="dropdown-menu" aria-labelledby="language">
-                            <div class="dropdown-item">
-                                <span class="flag-icon flag-icon-fr"></span>
-                            </div>
-                            <div class="dropdown-item">
-                                <i class="flag-icon flag-icon-es"></i>
-                            </div>
-                            <div class="dropdown-item">
-                                <i class="flag-icon flag-icon-us"></i>
-                            </div>
-                            <div class="dropdown-item">
-                                <i class="flag-icon flag-icon-it"></i>
-                            </div>
+                    <a class="dropdown-toggle" href="#" data-toggle="dropdown"  id="language" aria-haspopup="true" aria-expanded="true">
+                        <i class="flag-icon flag-icon-us"></i>
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="language">
+                        <div class="dropdown-item">
+                            <span class="flag-icon flag-icon-fr"></span>
                         </div>
-                    </div> -->
+                        <div class="dropdown-item">
+                            <i class="flag-icon flag-icon-es"></i>
+                        </div>
+                        <div class="dropdown-item">
+                            <i class="flag-icon flag-icon-us"></i>
+                        </div>
+                        <div class="dropdown-item">
+                            <i class="flag-icon flag-icon-it"></i>
+                        </div>
+                    </div>
+                </div> -->
 
                 </div>
             </div>
@@ -207,15 +207,15 @@
             </div>
 
             <!-- <div class="col-sm-5">
-                <div class="page-header float-right">
-                    <div class="page-title">
-                        <ol class="breadcrumb text-right">
-                            <li class="menu-icon fa fa-dashboard"></li>
-                            <!-- <li class="active">Dashboard</li> -->
+            <div class="page-header float-right">
+                <div class="page-title">
+                    <ol class="breadcrumb text-right">
+                        <li class="menu-icon fa fa-dashboard"></li>
+                        <!-- <li class="active">Dashboard</li> -->
             <!---  </ol>
-                    </div>
                 </div>
-            </div>  -->
+            </div>
+        </div>  -->
 
             <div class="col-sm-7">
                 <div class="page-header dropdown float-right">
@@ -241,277 +241,348 @@
                 <div class="card-body">
                     <table id="bootstrap-data-table-export" class="table table-bordered table-striped" border="1" cellspacing="0" cellpadding="10">
                         <thead>
-                            <tr style="top: 0px" class="bg-primary">
-                                <th rowspan="2" style="vertical-align : middle;text-align:center;"><center>NO</center>
-                                </th>
-                                <th rowspan="2" style="vertical-align : middle;text-align:center;">
-                                    <center>TANGGAL</center>
-                                </th>
-                                <th rowspan="2" style="vertical-align : middle;text-align:center;">
-                                    <center>PERNER</center>
-                                </th>
-                                <th rowspan="2" style="vertical-align : middle;text-align:center;">
-                                    <center>L/P</center>
-                                </th>
-                                <th rowspan="2" style="vertical-align : middle;text-align:center;">
-                                    <center>NAMA</center>
-                                </th>
-                                <th rowspan="2" style="vertical-align : middle;text-align:center;">
-                                    <center>JOB</center>
-                                </th>
-                                <th rowspan="2" style="vertical-align : middle;text-align:center;">
-                                    <center>DINAS</center>
-                                </th>
-                                <th rowspan="2" style="vertical-align : middle;text-align:center;">
-                                    <center>STATUS</center>
-                                </th>
-                                <th colspan="4" class="bg-info">
-                                    <center> TICKET </center>
-                                </th>
-                                <th colspan="3" class="bg-success">
-                                    <center> CLOSE </center>
-                                </th>
-                                <th rowspan="2" style="vertical-align : middle;text-align:center;">
-                                    <center>CASE > 30 MENIT</center>
-                                </th>
-                                <th rowspan="2" style="vertical-align : middle;text-align:center;">
-                                    <center>CASE BY HD/TEKNISI</center>
-                                </th>
-                                <th colspan="3" class="bg-warning">
-                                    <center> UNBIND </center>
-                                </th>
-                                <th colspan="3" class="bg-secondary">
-                                    <center>TOTAL</center>
-                                </th>
-                                <th rowspan="2" style="vertical-align : middle;text-align:center;">
-                                    <center>PERFORMANCE</center>
-                                </th>
+                        <tr style="top: 0px" class="bg-primary">
+                            <th rowspan="2" style="vertical-align : middle;text-align:center;">
+                                <center>NO</center>
+                            </th>
+                            <th rowspan="2" style="vertical-align : middle;text-align:center;">
+                                <center>TANGGAL</center>
+                            </th>
+                            <th rowspan="2" style="vertical-align : middle;text-align:center;">
+                                <center>PERNER</center>
+                            </th>
+                            <th rowspan="2" style="vertical-align : middle;text-align:center;">
+                                <center>L/P</center>
+                            </th>
+                            <th rowspan="2" style="vertical-align : middle;text-align:center;">
+                                <center>NAMA</center>
+                            </th>
+                            <th rowspan="2" style="vertical-align : middle;text-align:center;">
+                                <center>JOB</center>
+                            </th>
+                            <th rowspan="2" style="vertical-align : middle;text-align:center;">
+                                <center>DINAS</center>
+                            </th>
+                            <th rowspan="2" style="vertical-align : middle;text-align:center;">
+                                <center>STATUS</center>
+                            </th>
+                            <th colspan="4" class="bg-info">
+                                <center> TICKET </center>
+                            </th>
+                            <th colspan="3" class="bg-success">
+                                <center> CLOSE </center>
+                            </th>
+                            <th rowspan="2" style="vertical-align : middle;text-align:center;">
+                                <center>CASE > 30 MENIT</center>
+                            </th>
+                            <th rowspan="2" style="vertical-align : middle;text-align:center;">
+                                <center>CASE BY HD/TEKNISI</center>
+                            </th>
+                            <th colspan="3" class="bg-warning">
+                                <center> UNBIND </center>
+                            </th>
+                            <th colspan="3" class="bg-secondary">
+                                <center>TOTAL</center>
+                            </th>
+                            <th rowspan="2" style="vertical-align : middle;text-align:center;">
+                                <center>PERFORMANCE</center>
+                            </th>
 
-                            </tr>
-                            <tr style="top: 0px">
-                                <td class="bg-info" style="vertical-align : middle;text-align:center;"> INBOX NOSSA</td>
-                                <td class="bg-info" style="vertical-align : middle;text-align:center;"> CARING /TIAL</td>
-                                <td class="bg-info" style="vertical-align : middle;text-align:center;"> DRAFT TICKET</td>
-                                <td class="bg-info" style="vertical-align : middle;text-align:center;"> PLASA</td>
-                                <td class="bg-success" style="vertical-align : middle;text-align:center;"> LOGIC</td>
-                                <td class="bg-success" style="vertical-align : middle;text-align:center;"> CARING</td>
-                                <td class="bg-success" style="vertical-align : middle;text-align:center;"> GAMAS</td>
-                                <!-- <th> </th>
-                                <th> </th> -->
-                                <td class="bg-warning" style="vertical-align : middle;text-align:center;"> INTERNET</td>
-                                <td class="bg-warning" style="vertical-align : middle;text-align:center;"> IPTV</td>
-                                <td class="bg-warning" style="vertical-align : middle;text-align:center;"> PASSWORD</td>
-                                <td class="bg-secondary" style="vertical-align : middle;text-align:center;"> TICKET</td>
-                                <td class="bg-secondary" style="vertical-align : middle;text-align:center;"> CLOSE</td>
-                                <td class="bg-secondary" style="vertical-align : middle;text-align:center;"> UNBIND</td>
-                            </tr>
+                        </tr>
+                        <tr style="top: 0px">
+                            <td class="bg-info" style="vertical-align : middle;text-align:center;"> INBOX NOSSA</td>
+                            <td class="bg-info" style="vertical-align : middle;text-align:center;"> CARING /TIAL</td>
+                            <td class="bg-info" style="vertical-align : middle;text-align:center;"> DRAFT TICKET</td>
+                            <td class="bg-info" style="vertical-align : middle;text-align:center;"> PLASA</td>
+                            <td class="bg-success" style="vertical-align : middle;text-align:center;"> LOGIC</td>
+                            <td class="bg-success" style="vertical-align : middle;text-align:center;"> CARING</td>
+                            <td class="bg-success" style="vertical-align : middle;text-align:center;"> GAMAS</td>
+                            <!-- <th> </th>
+                        <th> </th> -->
+                            <td class="bg-warning" style="vertical-align : middle;text-align:center;"> INTERNET</td>
+                            <td class="bg-warning" style="vertical-align : middle;text-align:center;"> IPTV</td>
+                            <td class="bg-warning" style="vertical-align : middle;text-align:center;"> PASSWORD</td>
+                            <td class="bg-secondary" style="vertical-align : middle;text-align:center;"> TICKET</td>
+                            <td class="bg-secondary" style="vertical-align : middle;text-align:center;"> CLOSE</td>
+                            <td class="bg-secondary" style="vertical-align : middle;text-align:center;"> UNBIND</td>
+                        </tr>
                         </thead>
+                        <tbody>
+                        @php
+                            $nomor_jobs_consumer = 1;
+                            $nomor_jobs_hd_service_node = 1;
+                            $total_tiket_inbox_nossa_jobs_consumer = 0;
+                            $total_caring_tial_jobs_consumer = 0;
+                            $total_draft_ticket_jobs_consumer = 0;
+                            $total_plasa_jobs_consumer = 0;
+
+                            $total_logic_resolved_jobs_consumer = 0;
+                            $total_caring_resolved_jobs_consumer = 0;
+                            $total_gamas_resolved_jobs_consumer = 0;
+
+                            $total_case_menit_jobs_consumer = 0;
+                            $total_case_by_teknisi_jobs_consumer = 0;
+
+                            $total_unbind_internet_jobs_consumer = 0;
+                            $total_unbind_iptv_jobs_consumer = 0;
+                            $total_unbind_password_jobs_consumer = 0;
+
+                            $total_semua_tiket_jobs_consumer = 0;
+                            $total_semua_close_jobs_consumer = 0;
+                            $total_semua_unbind_jobs_consumer = 0;
+
+                            $total_performance_jobs_consumer = 0;
+
+                            $total_tiket_inbox_nossa_jobs_hd_service_node = 0;
+                            $total_caring_tial_jobs_hd_service_node = 0;
+                            $total_draft_ticket_jobs_hd_service_node = 0;
+                            $total_plasa_jobs_hd_service_node = 0;
+
+                            $total_logic_resolved_jobs_hd_service_node = 0;
+                            $total_caring_resolved_jobs_hd_service_node = 0;
+                            $total_gamas_resolved_jobs_hd_service_node = 0;
+
+                            $total_case_menit_jobs_hd_service_node = 0;
+                            $total_case_by_teknisi_jobs_hd_service_node = 0;
+
+                            $total_semua_tiket_jobs_hd_service_node = 0;
+                            $total_semua_close_jobs_hd_service_node = 0;
+
+                            $total_performance_jobs_hd_service_node = 0;
+
+
+                        @endphp
+
+                        @foreach($crew as $index => $c)
+                            @if($c -> jobs == 'CONSUMER' || $c->jobs == 'CONSUMER EXPERT')
+                                <tr>
+                                    <td style="display: none">{{$total_tiket_inbox_nossa_jobs_consumer += $c->ticket_inbox_nossa}}</td>
+                                    <td style="display: none">{{$total_caring_tial_jobs_consumer += $c->caring_tial}}</td>
+                                    <td style="display: none">{{$total_draft_ticket_jobs_consumer += $c->draft_ticket}}</td>
+                                    <td style="display: none">{{$total_plasa_jobs_consumer += $c->plasa}}</td>
+
+                                    <td style="display: none">{{$total_logic_resolved_jobs_consumer += $c->logic_resolved}}</td>
+                                    <td style="display: none">{{$total_caring_resolved_jobs_consumer += $c->caring_resolved}}</td>
+                                    <td style="display: none">{{$total_gamas_resolved_jobs_consumer += $c->gamas_resolved}}</td>
+
+                                    <td style="display: none">{{$total_case_menit_jobs_consumer += $c->case_menit}}</td>
+                                    <td style="display: none">{{$total_case_by_teknisi_jobs_consumer += $c->case_by_teknisi}}</td>
+                                    <td style="display: none">{{$total_unbind_internet_jobs_consumer += $c->internet}}</td>
+                                    <td style="display: none">{{$total_unbind_iptv_jobs_consumer += $c->iptv}}</td>
+                                    <td style="display: none">{{$total_unbind_password_jobs_consumer += $c->password}}</td>
+
+                                    <td style="display: none">{{$total_semua_tiket_jobs_consumer += ((int)$c ->  ticket_inbox_nossa) + ((int)$c ->  caring_tial) + ((int)$c ->  draft_ticket) +
+                                    ((int)$c ->  plasa)}}</td>
+                                    <td style="display: none">{{$total_semua_close_jobs_consumer += ((int)$c ->  logic_resolved) + ((int)$c ->  caring_resolved) + ((int)$c ->  gamas_resolved)}}</td>
+                                    <td style="display: none">{{$total_semua_unbind_jobs_consumer += $c ->  internet + $c ->  iptv + $c ->  password }}</td>
+
+                                    <td style="display: none">{{ $total_performance_jobs_consumer += ((int)$c -> ticket_inbox_nossa * 1) + ((int)$c -> caring_tial * 1) + ((int)$c -> draft_ticket * 1) +
+                                    ((int)$c -> plasa * 2) + ((int)$c -> logic_resolved * 4) + ((int)$c -> caring_resolved * 2) + ((int)$c -> gamas_resolved * 1) + ((int)$c -> case_menit * 2) +
+                                    ((int)$c -> case_by_teknisi * 2)}}</td>
+
+                                    <td style="vertical-align : middle;text-align:center;">{{ $nomor_jobs_consumer++  }}</td>
+                                    <td style="vertical-align : middle;text-align:center;">{{ date('d/m/Y', strtotime($c->tanggal)) }}</td>
+                                    <td style="vertical-align : middle;text-align:center;">{{ $c -> perner }}</td>
+                                    <td style="vertical-align : middle;text-align:center;">{{ $c -> jenis_kelamin }}</td>
+                                    <td>{{ $c -> nama }}</td>
+                                    <td>{{ $c -> jobs }}</td>
+                                    <td style="vertical-align : middle;text-align:center;">{{ $c -> dinas }}</td>
+                                    @if($c -> status == '0')
+                                        <td style="vertical-align : middle;text-align:center;">WFO</td>
+                                    @else
+                                        <td style="vertical-align : middle;text-align:center;">{{ $c -> status }}</td>
+                                    @endif
+                                    <td style="vertical-align : middle;text-align:center;">{{ $c -> ticket_inbox_nossa }}</td>
+                                    <td style="vertical-align : middle;text-align:center;">{{ $c -> caring_tial }}</td>
+                                    <td style="vertical-align : middle;text-align:center;">{{ $c -> draft_ticket }}</td>
+                                    <td style="vertical-align : middle;text-align:center;">{{ $c -> plasa }}</td>
+                                    <td style="vertical-align : middle;text-align:center;">{{ $c -> logic_resolved }}</td>
+                                    <td style="vertical-align : middle;text-align:center;">{{ $c -> caring_resolved }}</td>
+                                    <td style="vertical-align : middle;text-align:center;">{{ $c -> gamas_resolved }}</td>
+                                    <td style="vertical-align : middle;text-align:center;">{{ $c -> case_menit }}</td>
+                                    <td style="vertical-align : middle;text-align:center;">{{ $c -> case_by_teknisi }}</td>
+                                    <td style="vertical-align : middle;text-align:center;">{{ $c -> internet }}</td>
+                                    <td style="vertical-align : middle;text-align:center;">{{ $c -> iptv }}</td>
+                                    <td style="vertical-align : middle;text-align:center;">{{ $c -> password }}</td>
+                                    <td style="vertical-align : middle;text-align:center;">{{ ((int)$c ->  ticket_inbox_nossa) + ((int)$c ->  caring_tial) + ((int)$c ->  draft_ticket) +
+                                    ((int)$c ->  plasa)}}</td>
+                                    <td style="vertical-align : middle;text-align:center;">{{((int)$c ->  logic_resolved) + ((int)$c ->  caring_resolved) + ((int)$c ->  gamas_resolved)}}</td>
+                                    <td style="vertical-align : middle;text-align:center;">{{ $c -> internet + $c -> iptv + $c -> password }}</td>
+                                    <td style="vertical-align : middle;text-align:center;">{{((int)$c -> ticket_inbox_nossa * 1) + ((int)$c -> caring_tial * 1) + ((int)$c -> draft_ticket * 1) +
+                                    ((int)$c -> plasa * 2) + ((int)$c -> logic_resolved * 4) + ((int)$c -> caring_resolved * 2) + ((int)$c -> gamas_resolved * 1) + ((int)$c -> case_menit * 2) +
+                                    ((int)$c -> case_by_teknisi * 2)}}</td>
+
+                                </tr>
+                            @endif
+                        @endforeach
+                        <tr>
+                            <td colspan="8" style="vertical-align : middle;text-align:center;">Total</td>
+                            <td style="vertical-align : middle;text-align:center;">{{ $total_tiket_inbox_nossa_jobs_consumer }}</td>
+                            <td style="vertical-align : middle;text-align:center;">{{ $total_caring_tial_jobs_consumer}}</td>
+                            <td style="vertical-align : middle;text-align:center;">{{ $total_draft_ticket_jobs_consumer}}</td>
+                            <td style="vertical-align : middle;text-align:center;">{{ $total_plasa_jobs_consumer}}</td>
+                            <td style="vertical-align : middle;text-align:center;">{{ $total_logic_resolved_jobs_consumer}}</td>
+                            <td style="vertical-align : middle;text-align:center;">{{ $total_caring_resolved_jobs_consumer}}</td>
+                            <td style="vertical-align : middle;text-align:center;">{{ $total_gamas_resolved_jobs_consumer}}</td>
+                            <td style="vertical-align : middle;text-align:center;">{{ $total_case_menit_jobs_consumer}}</td>
+                            <td style="vertical-align : middle;text-align:center;">{{ $total_case_by_teknisi_jobs_consumer}}</td>
+                            <td style="vertical-align : middle;text-align:center;">{{ $total_unbind_internet_jobs_consumer }}</td>
+                            <td style="vertical-align : middle;text-align:center;">{{ $total_unbind_iptv_jobs_consumer }}</td>
+                            <td style="vertical-align : middle;text-align:center;">{{ $total_unbind_password_jobs_consumer }}</td>
+                            <td style="vertical-align : middle;text-align:center;">{{$total_semua_tiket_jobs_consumer}}</td>
+                            <td style="vertical-align : middle;text-align:center;">{{$total_semua_close_jobs_consumer}}</td>
+                            <td style="vertical-align : middle;text-align:center;">{{ $total_semua_unbind_jobs_consumer }}</td>
+                            <td style="vertical-align : middle;text-align:center;">{{$total_performance_jobs_consumer + $total_semua_unbind_jobs_consumer}}</td>
+
+                        </tr>
+                        </tbody>
+                    </table>
+                    <table id="bootstrap-data-table-export" class="table table-bordered table-striped" border="1" cellspacing="0" cellpadding="10">
+                        <thead>
+                        <tr style="top: 0px" class="bg-primary">
+                            <th rowspan="2" style="vertical-align : middle;text-align:center;">NO</center>
+                            </th>
+                            <th rowspan="2" style="vertical-align : middle;text-align:center;">
+                                <center>TANGGAL</center>
+                            </th>
+                            <th rowspan="2" style="vertical-align : middle;text-align:center;">
+                                <center>PERNER</center>
+                            </th>
+                            <th rowspan="2" style="vertical-align : middle;text-align:center;">
+                                <center>L/P</center>
+                            </th>
+                            <th rowspan="2" style="vertical-align : middle;text-align:center;">
+                                <center>NAMA</center>
+                            </th>
+                            <th rowspan="2" style="vertical-align : middle;text-align:center;">
+                                <center>JOB</center>
+                            </th>
+                            <th rowspan="2" style="vertical-align : middle;text-align:center;">
+                                <center>DINAS</center>
+                            </th>
+                            <th rowspan="2" style="vertical-align : middle;text-align:center;">
+                                <center>STATUS</center>
+                            </th>
+                            <th colspan="4" class="bg-info" style="vertical-align : middle;text-align:center;">
+                                <center> TICKET </center>
+                            </th>
+                            <th colspan="3" class="bg-success" style="vertical-align : middle;text-align:center;">
+                                <center> CLOSE </center>
+                            </th>
+                            <th rowspan="2" style="vertical-align : middle;text-align:center;">
+                                <center>CASE > 30 MENIT</center>
+                            </th>
+                            <th rowspan="2" style="vertical-align : middle;text-align:center;">
+                                <center>CASE BY HD/TEKNISI</center>
+                            </th>
+                            <th colspan="3" class="bg-warning" style="vertical-align : middle;text-align:center;">
+                                <center> UNBIND </center>
+                            </th>
+                            <th colspan="3" class="bg-secondary" style="vertical-align : middle;text-align:center;">
+                                <center>TOTAL</center>
+                            </th>
+                            <th rowspan="2" style="vertical-align : middle;text-align:center;">
+                                <center>PERFORMANCE</center>
+                            </th>
+                        </tr>
+                        <tr style="top: 0px">
+                            <td class="bg-info" style="vertical-align : middle;text-align:center;"> INBOX NOSSA</td>
+                            <td class="bg-info" style="vertical-align : middle;text-align:center;"> CARING /TIAL</td>
+                            <td class="bg-info" style="vertical-align : middle;text-align:center;"> DRAFT TICKET</td>
+                            <td class="bg-info" style="vertical-align : middle;text-align:center;"> PLASA</td>
+                            <td class="bg-success" style="vertical-align : middle;text-align:center;"> LOGIC</td>
+                            <td class="bg-success" style="vertical-align : middle;text-align:center;"> CARING</td>
+                            <td class="bg-success" style="vertical-align : middle;text-align:center;"> GAMAS</td>
+                            <!-- <th> </th>
+                        <th> </th> -->
+                            <td class="bg-warning" style="vertical-align : middle;text-align:center;"> INTERNET</td>
+                            <td class="bg-warning" style="vertical-align : middle;text-align:center;"> IPTV</td>
+                            <td class="bg-warning" style="vertical-align : middle;text-align:center;"> PASSWORD</td>
+                            <td class="bg-secondary" style="vertical-align : middle;text-align:center;"> TICKET</td>
+                            <td class="bg-secondary" style="vertical-align : middle;text-align:center;"> CLOSE</td>
+                            <td class="bg-secondary" style="vertical-align : middle;text-align:center;"> UNBIND</td>
+                        </tr>
+                        </thead>
+
                         <tbody>
                         @foreach($crew as $index => $c)
-                            <tr>
-                                <td>{{ $index + 1 }}</td>
-                                <td>{{ date('d/m/Y', strtotime($c->tanggal)) }}</td>
-                                <td>{{ $c -> perner }}</td>
-                                <td>{{ $c -> jenis_kelamin }}</td>
-                                <td>{{ $c -> nama }}</td>
-                                <td>{{ $c -> jobs }}</td>
-                                <td>{{ $c -> dinas }}</td>
-                                @if($c -> status == '0')
-                                    <td>WFO</td>
-                                @else
-                                    <td>{{ $c -> status }}</td>
-                                @endif
-                                <td>{{ $c -> ticket_inbox_nossa }}</td>
-                                <td>3</td>
-                                <td>53</td>
-                                <td>0</td>
-                                <td>0</td>
-                                <td>0</td>
-                                <td>0</td>
-                                <td>3</td>
-                                <td>0</td>
-                                <td>0</td>
-                                <td>0</td>
-                                <td>0</td>
-                                <td>55</td>
-                                <td>40</td>
-                                <td>0</td>
-                                <td>223</td>
+                            @if($c -> jobs == 'HD SERVICE NODE')
+                                <tr>
+                                    <td style="display: none">{{$total_tiket_inbox_nossa_jobs_hd_service_node += $c->ticket_inbox_nossa}}</td>
+                                    <td style="display: none">{{$total_caring_tial_jobs_hd_service_node += $c->caring_tial}}</td>
+                                    <td style="display: none">{{$total_draft_ticket_jobs_hd_service_node += $c->draft_ticket}}</td>
+                                    <td style="display: none">{{$total_plasa_jobs_hd_service_node += $c->plasa}}</td>
 
-                            </tr>
+                                    <td style="display: none">{{$total_logic_resolved_jobs_hd_service_node += $c->logic_resolved}}</td>
+                                    <td style="display: none">{{$total_plasa_jobs_hd_service_node += $c->caring_resolved}}</td>
+                                    <td style="display: none">{{$total_plasa_jobs_hd_service_node += $c->gamas_resolved}}</td>
+
+                                    <td style="display: none">{{$total_case_menit_jobs_hd_service_node += $c->case_menit}}</td>
+                                    <td style="display: none">{{$total_case_by_teknisi_jobs_hd_service_node += $c->case_by_teknisi}}</td>
+
+                                    <td style="display: none">{{$total_semua_tiket_jobs_hd_service_node += ((int)$c ->  ticket_inbox_nossa) + ((int)$c ->  caring_tial) + ((int)$c ->  draft_ticket) +
+                                    ((int)$c ->  plasa)}}</td>
+                                    <td style="display: none">{{$total_semua_close_jobs_hd_service_node += ((int)$c ->  logic_resolved) + ((int)$c ->  caring_resolved) + ((int)$c ->  gamas_resolved)}}</td>
+
+                                    <td style="display: none">{{ $total_performance_jobs_hd_service_node += ((int)$c -> ticket_inbox_nossa * 1) + ((int)$c -> caring_tial * 1) + ((int)$c -> draft_ticket * 1) +
+                                    ((int)$c -> plasa * 2) + ((int)$c -> logic_resolved * 4) + ((int)$c -> caring_resolved * 2) + ((int)$c -> gamas_resolved * 1) + ((int)$c -> case_menit * 2) +
+                                    ((int)$c -> case_by_teknisi * 2)}}</td>
+
+                                    <td style="vertical-align : middle;text-align:center;">{{ $nomor_jobs_hd_service_node++ }}</td>
+                                    <td style="vertical-align : middle;text-align:center;">{{ date('d/m/Y', strtotime($c->tanggal)) }}</td>
+                                    <td style="vertical-align : middle;text-align:center;">{{ $c -> perner }}</td>
+                                    <td style="vertical-align : middle;text-align:center;">{{ $c -> jenis_kelamin }}</td>
+                                    <td>{{ $c -> nama }}</td>
+                                    <td>{{ $c -> jobs }}</td>
+                                    <td style="vertical-align : middle;text-align:center;">{{ $c -> dinas }}</td>
+                                    @if($c -> status == '0')
+                                        <td style="vertical-align : middle;text-align:center;">WFO</td>
+                                    @else
+                                        <td style="vertical-align : middle;text-align:center;">{{ $c -> status }}</td>
+                                    @endif
+                                    <td style="vertical-align : middle;text-align:center;">{{ $c -> ticket_inbox_nossa }}</td>
+                                    <td style="vertical-align : middle;text-align:center;">{{ $c -> caring_tial }}</td>
+                                    <td style="vertical-align : middle;text-align:center;">{{ $c -> draft_ticket }}</td>
+                                    <td style="vertical-align : middle;text-align:center;">{{ $c -> plasa }}</td>
+                                    <td style="vertical-align : middle;text-align:center;">{{ $c -> logic_resolved }}</td>
+                                    <td style="vertical-align : middle;text-align:center;">{{ $c -> caring_resolved }}</td>
+                                    <td style="vertical-align : middle;text-align:center;">{{ $c -> gamas_resolved }}</td>
+                                    <td style="vertical-align : middle;text-align:center;">{{ $c -> case_menit }}</td>
+                                    <td style="vertical-align : middle;text-align:center;">{{ $c -> case_by_teknisi }}</td>
+                                    <td style="vertical-align : middle;text-align:center;">0</td>
+                                    <td style="vertical-align : middle;text-align:center;">0</td>
+                                    <td style="vertical-align : middle;text-align:center;">0</td>
+                                    <td style="vertical-align : middle;text-align:center;">{{ ((int)$c ->  ticket_inbox_nossa) + ((int)$c ->  caring_tial) + ((int)$c ->  draft_ticket) +
+                                    ((int)$c ->  plasa)}}</td>
+                                    <td style="vertical-align : middle;text-align:center;">{{((int)$c ->  logic_resolved) + ((int)$c ->  caring_resolved) + ((int)$c ->  gamas_resolved)}}</td>
+                                    <td style="vertical-align : middle;text-align:center;">0</td>
+                                    <td style="vertical-align : middle;text-align:center;">{{((int)$c -> ticket_inbox_nossa * 1) + ((int)$c -> caring_tial * 1) + ((int)$c -> draft_ticket * 1) +
+                                    ((int)$c -> plasa * 2) + ((int)$c -> logic_resolved * 4) + ((int)$c -> caring_resolved * 2) + ((int)$c -> gamas_resolved * 1) + ((int)$c -> case_menit * 2) +
+                                    ((int)$c -> case_by_teknisi * 2)}}</td>
+
+                                </tr>
+                            @endif
                         @endforeach
-                        </tbody>
+                        <tr>
+                            <td colspan="8" style="vertical-align : middle;text-align:center;">Total</td>
+                            <td style="vertical-align : middle;text-align:center;">{{ $total_tiket_inbox_nossa_jobs_hd_service_node}}</td>
+                            <td style="vertical-align : middle;text-align:center;">{{ $total_caring_tial_jobs_hd_service_node}}</td>
+                            <td style="vertical-align : middle;text-align:center;">{{ $total_draft_ticket_jobs_hd_service_node}}</td>
+                            <td style="vertical-align : middle;text-align:center;">{{ $total_plasa_jobs_hd_service_node}}</td>
+                            <td style="vertical-align : middle;text-align:center;">{{ $total_logic_resolved_jobs_hd_service_node}}</td>
+                            <td style="vertical-align : middle;text-align:center;">{{ $total_caring_resolved_jobs_hd_service_node}}</td>
+                            <td style="vertical-align : middle;text-align:center;">{{ $total_gamas_resolved_jobs_hd_service_node}}</td>
+                            <td style="vertical-align : middle;text-align:center;">{{ $total_case_menit_jobs_hd_service_node}}</td>
+                            <td style="vertical-align : middle;text-align:center;">{{ $total_case_by_teknisi_jobs_hd_service_node}}</td>
+                            <td style="vertical-align : middle;text-align:center;">0</td>
+                            <td style="vertical-align : middle;text-align:center;">0</td>
+                            <td style="vertical-align : middle;text-align:center;">0</td>
+                            <td style="vertical-align : middle;text-align:center;">{{$total_semua_tiket_jobs_hd_service_node}}</td>
+                            <td style="vertical-align : middle;text-align:center;">{{$total_semua_close_jobs_hd_service_node}}</td>
+                            <td style="vertical-align : middle;text-align:center;">0</td>
+                            <td style="vertical-align : middle;text-align:center;">{{ $total_performance_jobs_hd_service_node}}</td>
 
-
-                        <thead>
-                            <tr style="top: 0px" class="bg-primary">
-                                <th rowspan="2">NO</center>
-                                </th>
-                                <th rowspan="2">
-                                    <center>TANGGAL</center>
-                                </th>
-                                <th rowspan="2">
-                                    <center>PERNER</center>
-                                </th>
-                                <th rowspan="2">
-                                    <center>L/P</center>
-                                </th>
-                                <th rowspan="2">
-                                    <center>NAMA</center>
-                                </th>
-                                <th rowspan="2">
-                                    <center>JOB</center>
-                                </th>
-                                <th rowspan="2">
-                                    <center>DINAS</center>
-                                </th>
-                                <th rowspan="2">
-                                    <center>STATUS</center>
-                                </th>
-                                <th colspan="4" class="bg-info">
-                                    <center> TICKET </center>
-                                </th>
-                                <th colspan="3" class="bg-success">
-                                    <center> CLOSE </center>
-                                </th>
-                                <th rowspan="2">
-                                    <center>CASE > 30 MENIT</center>
-                                </th>
-                                <th rowspan="2">
-                                    <center>CASE BY HD/TEKNISI</center>
-                                </th>
-                                <th colspan="3" class="bg-warning">
-                                    <center> UNBIND </center>
-                                </th>
-                                <th colspan="3" class="bg-secondary">
-                                    <center>TOTAL</center>
-                                </th>
-                                <th rowspan="2">
-                                    <center>PERFORMANCE</center>
-                                </th>
-                            </tr>
-                            <tr style="top: 0px">
-                                <td class="bg-info"> INBOX NOSSA</td>
-                                <td class="bg-info"> CARING /TIAL</td>
-                                <td class="bg-info"> DRAFT TICKET</td>
-                                <td class="bg-info"> PLASA</td>
-                                <td class="bg-success"> LOGIC</td>
-                                <td class="bg-success"> CARING</td>
-                                <td class="bg-success"> GAMAS</td>
-                                <!-- <th> </th>
-                                <th> </th> -->
-                                <td class="bg-warning"> INTERNET</td>
-                                <td class="bg-warning"> IPTV</td>
-                                <td class="bg-warning"> PASSWORD</td>
-                                <td class="bg-secondary"> TICKET</td>
-                                <td class="bg-secondary"> CLOSE</td>
-                                <td class="bg-secondary"> UNBIND</td>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>1</td>
-                                <td>17/05/2022</td>
-                                <td>97144</td>
-                                <td>L</td>
-                                <td>ENDRAT FUJIYANTO</td>
-                                <td>CONSUMER</td>
-                                <td>P8</td>
-                                <td>WFO</td>
-                                <td>1</td>
-                                <td>3</td>
-                                <td>53</td>
-                                <td>0</td>
-                                <td>0</td>
-                                <td>0</td>
-                                <td>0</td>
-                                <td>3</td>
-                                <td>0</td>
-                                <td>0</td>
-                                <td>0</td>
-                                <td>0</td>
-                                <td>55</td>
-                                <td>40</td>
-                                <td>0</td>
-                                <td>223</td>
-
-                            </tr>
-                            <tr>
-                                <td>2</td>
-                                <td>17/05/2022</td>
-                                <td>97144</td>
-                                <td>L</td>
-                                <td>ENDRAT FUJIYANTO</td>
-                                <td>CONSUMER</td>
-                                <td>P8</td>
-                                <td>WFO</td>
-                                <td>1</td>
-                                <td>3</td>
-                                <td>53</td>
-                                <td>0</td>
-                                <td>0</td>
-                                <td>0</td>
-                                <td>0</td>
-                                <td>3</td>
-                                <td>0</td>
-                                <td>0</td>
-                                <td>0</td>
-                                <td>0</td>
-                                <td>55</td>
-                                <td>40</td>
-                                <td>0</td>
-                                <td>223</td>
-
-                            </tr>
-                            <tr>
-                                <td>2</td>
-                                <td>17/05/2022</td>
-                                <td>97144</td>
-                                <td>L</td>
-                                <td>ENDRAT FUJIYANTO</td>
-                                <td>CONSUMER</td>
-                                <td>P8</td>
-                                <td>WFO</td>
-                                <td>1</td>
-                                <td>3</td>
-                                <td>53</td>
-                                <td>0</td>
-                                <td>0</td>
-                                <td>0</td>
-                                <td>0</td>
-                                <td>3</td>
-                                <td>0</td>
-                                <td>0</td>
-                                <td>0</td>
-                                <td>0</td>
-                                <td>55</td>
-                                <td>40</td>
-                                <td>0</td>
-                                <td>223</td>
-
-                            </tr>
-                            <tr>
-                                <td colspan="8">
-                                    <center>Total</center>
-                                </td>
-                                <td>1</td>
-                                <td>3</td>
-                                <td>53</td>
-                                <td>0</td>
-                                <td>0</td>
-                                <td>0</td>
-                                <td>0</td>
-                                <td>3</td>
-                                <td>0</td>
-                                <td>0</td>
-                                <td>0</td>
-                                <td>0</td>
-                                <td>55</td>
-                                <td>40</td>
-                                <td>0</td>
-                                <td>223</td>
-
-                            </tr>
+                        </tr>
                         </tbody>
                     </table>
                 </div>
@@ -527,10 +598,10 @@
     <script src="{{asset('style/vendors/popper.js/dist/umd/popper.min.js')}}"></script>
     <script src="{{asset('style/vendors/bootstrap/dist/js/bootstrap.min.js')}}"></script>
     <script src="{{asset('style/assets/js/main.js')}}"></script>
-{{--    <script type="text/javascript" src="/bower_components/moment/min/moment.min.js"></script>--}}
-{{--    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.47/js/bootstrap-datetimepicker.min.js"></script>--}}
+{{-- <script type="text/javascript" src="/bower_components/moment/min/moment.min.js"></script>--}}
+{{-- <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.47/js/bootstrap-datetimepicker.min.js"></script>--}}
 
-    <!-- <script src="{{asset('style/vendors/chart.js/dist/Chart.bundle.min.js')}}"></script>
+<!-- <script src="{{asset('style/vendors/chart.js/dist/Chart.bundle.min.js')}}"></script>
     <script src="{{asset('style/assets/js/dashboard.js')}}"></script>
     <script src="{{asset('style/assets/js/widgets.js')}}"></script>
     <script src="{{asset('style/vendors/jqvmap/dist/jquery.vmap.min.js')}}"></script>
@@ -554,7 +625,7 @@
             });
         })(jQuery);
     </script> -->
-    </form>
+</form>
 </body>
 <script>
     let today = new Date();
@@ -566,21 +637,25 @@
     changeTitleDate();
 
     let select = document.getElementById('datePicker')
-    select.onchange = function(){
+    select.onchange = function() {
         this.form.submit();
     };
 
-    function changeTitleDate(){
+    function changeTitleDate() {
         let datePicker = document.getElementById('datePicker').value;
         let date = new Date(datePicker);
-        let dayName = date.toLocaleString("in-ID", {weekday:'long'})
+        let dayName = date.toLocaleString("in-ID", {
+            weekday: 'long'
+        })
         let dd = String(date.getDate()).padStart(2, '0');
-        let monthName = date.toLocaleString("in-ID", {month:'long'})
+        let monthName = date.toLocaleString("in-ID", {
+            month: 'long'
+        })
         let yyyy = date.getFullYear();
         let titleDate = dayName.toLocaleUpperCase() + ' / ' + dd + ' ' + monthName.toLocaleUpperCase() + ' ' + yyyy;
         document.getElementById('titleDate').innerHTML = '(' + titleDate + ')';
 
     }
-
 </script>
+
 </html>
