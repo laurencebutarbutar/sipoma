@@ -1,6 +1,11 @@
 <!doctype html>
 
 <head>
+    @if($request -> realtimeData == 1)
+        @php
+          echo "<meta http-equiv='refresh' content='60;url=" . env('APP_URL') . "/main' />"
+        @endphp
+    @endif
     <!-- <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge"> -->
     <title>Sipoma</title>
@@ -223,6 +228,12 @@
                         <div class="input-group input-medium date-picker input-daterange">
                             <input type="date" class="form-control" id="datePicker" name="datePickerRequest" value="{{ $request -> datePickerRequest }}" onchange="changeTitleDate()">
                         </div>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="realtimeData" name="realtimeData" value="{{ $request -> realtimeData }}">
+                        <label class="form-check-label" for="realtimeData">
+                            Realtime Data
+                        </label>
                     </div>
                 </div>
             </div>
@@ -656,6 +667,18 @@
         document.getElementById('titleDate').innerHTML = '(' + titleDate + ')';
 
     }
+
+    //Realtime Function
+    const selectElement = document.querySelector('#realtimeData');
+    document.getElementById("realtimeData").checked = selectElement.value == 1 ? true : false;
+
+    selectElement.addEventListener('change', (event) => {
+        selectElement.value = selectElement.checked ? 1 : 0;
+    });
+
+    selectElement.onchange = function() {
+        this.form.submit();
+    };
 </script>
 
 </html>

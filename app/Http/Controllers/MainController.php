@@ -16,6 +16,10 @@ class MainController extends Controller
             $request -> datePickerRequest = $mytime;
         }
 
+        if($request -> realtimeData == null){
+            $request -> realtimeData = 0;
+        }
+
         // mengambil data dari table pegawai seluruh jobs
         $crew = DB::table('crew as c')
             ->selectRaw("TRIM(c.perner) as perner,
